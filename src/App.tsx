@@ -1,7 +1,12 @@
-import React from "react";
+import { Form, View } from "./layouts";
 
 const App = () => {
-    return <div>App</div>;
+    return (
+        <div>
+            <Form />
+            <View />
+        </div>
+    );
 };
 
 export default App;
