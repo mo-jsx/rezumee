@@ -1,11 +1,13 @@
 import { Form, View } from "./layouts";
 
+import "./app.css";
+
 const App = () => {
     return (
-        <div>
+        <main className="app">
             <Form />
             <View />
-        </div>
+        </main>
     );
 };
 
