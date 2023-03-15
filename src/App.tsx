@@ -1,4 +1,4 @@
-import { Form, View } from "./layouts";
+import { Form, Display } from "./views";
 
 import "./app.css";
 
@@ -6,7 +6,7 @@ const App = () => {
     return (
         <main className="app">
             <Form />
-            <View />
+            <Display />
         </main>
     );
 };
