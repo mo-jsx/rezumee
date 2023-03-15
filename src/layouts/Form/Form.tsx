@@ -1,7 +1,13 @@
-import React from "react";
+import Header from "./Header";
+
+import "./form.css";
 
 const Form = () => {
-    return <div>Form</div>;
+    return (
+        <div className="form">
+            <Header />
+        </div>
+    );
 };
 
 export default Form;
