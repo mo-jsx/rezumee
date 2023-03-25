@@ -1,6 +1,6 @@
 import { Form, Display } from "./views";
 
-import "./app.css";
+import "./app.scss";
 
 const App = () => {
     return (
