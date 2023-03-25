@@ -1,11 +1,12 @@
-import { Header } from "../../layouts";
+import { Details, Header } from "../../layouts";
 
-import "./form.css";
+import "./form.scss";
 
 const Form = () => {
     return (
         <div className="form">
             <Header />
+            <Details />
         </div>
     );
 };
