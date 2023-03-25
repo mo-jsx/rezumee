@@ -6,6 +6,8 @@ import { Details as DetailsProps } from "types/";
 import "./details.scss";
 import useProfileStore from "../../../store/profileStore";
 
+import { GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react";
+
 const validation = Yup.object({
     // firstName: Yup.string().required("Required!"),
     // lastName: Yup.string().required("Required!"),
@@ -205,17 +207,19 @@ const Details = () => {
 
                             <div className="details-input" id="bio">
                                 <label htmlFor="bio">Bio</label>
-                                <Field
-                                    className="textarea"
-                                    as="textarea"
-                                    name="bio"
-                                    id="bio"
-                                    placeholder="A curious human with ambitions."
-                                    onChange={e => {
-                                        formik.handleChange(e);
-                                        updateBio(e.target.value);
-                                    }}
-                                />
+                                <GrammarlyEditorPlugin clientId="client_8uvgmmYtA3FKgst7xf8ZfF">
+                                    <Field
+                                        className="textarea"
+                                        as="textarea"
+                                        name="bio"
+                                        id="bio"
+                                        placeholder="A curious human with ambitions."
+                                        onChange={e => {
+                                            formik.handleChange(e);
+                                            updateBio(e.target.value);
+                                        }}
+                                    />
+                                </GrammarlyEditorPlugin>
                                 <ErrorMessage name="lastName" />
                             </div>
                         </div>
