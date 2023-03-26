@@ -1,4 +1,4 @@
-import { Details, Header } from "../../layouts";
+import { Details, Experience, Header } from "../../layouts";
 
 import "./form.scss";
 
@@ -7,6 +7,7 @@ const Form = () => {
         <div className="form">
             <Header />
             <Details />
+            <Experience />
         </div>
     );
 };
