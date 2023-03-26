@@ -23,14 +23,14 @@ A react based web application enhanced with a spell-checking as you type, and a 
 
 ## Tools
 
--   ReactJS: A front-end JavaScript library.
--   Zustand: A state-management library.
--   Jest: A test runner for JavaScript.
--   Cypress: E2E test runner.
--   Formik: Forms handling library.
--   Yup: A schema builder for runtime value parsing and validation.
--   DraftJS: A rich-text WYSIWYG editor framework.
--   Grammarly: SDK for spell-checking, grammar-checking
+-   ReactJS ⚛️: A front-end JavaScript library.
+-   Zustand 🐻 : A state-management library.
+-   Jest 🧪 : A test runner for JavaScript.
+-   Cypress 🧪 : E2E test runner.
+-   Formik 📄 : Forms handling library.
+-   Yup ✅ : A schema builder for runtime value parsing and validation.
+-   DraftJS 📄 : A rich-text WYSIWYG editor framework.
+-   Grammarly 📝 SDK for spell-checking, grammar-checking
 
 ---
 
