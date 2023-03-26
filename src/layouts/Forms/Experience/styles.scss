@@ -1,0 +1,28 @@
+.experience-form {
+    padding: 1rem 0rem;
+    .experience {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr) 2fr;
+        grid-gap: 1rem;
+
+        .jobTitle {
+            grid-area: 1 / 1 / 2 / 3;
+        }
+        .company {
+            grid-area: 1 / 3 / 2 / 5;
+        }
+        .startDate {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        .endDate {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+        .location {
+            grid-area: 2 / 3 / 3 / 5;
+        }
+        .jobDesc {
+            grid-area: 3 / 1 / 4 / 5;
+        }
+    }
+}
