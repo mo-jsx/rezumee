@@ -1,19 +1,19 @@
 .form {
-    background-color: gainsboro;
     padding: 1rem;
 
     overflow-y: scroll;
 
     &::-webkit-scrollbar {
-        width: 0.5em;
+        width: 5px;
     }
 
     &::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: darkgrey;
-        outline: 1px solid slategrey;
+        background-color: darkorange;
+        outline: 1px solid darkorange;
+        border-radius: 10px;
     }
 }
