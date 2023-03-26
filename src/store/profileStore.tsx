@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { Details } from "types/";
+import { Details, Experience } from "types/";
 
 interface ProfileState extends Details {
     updateFirstName: (by: string) => void;
