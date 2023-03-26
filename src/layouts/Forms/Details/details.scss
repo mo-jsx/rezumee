@@ -33,27 +33,5 @@
         #bio {
             grid-area: 4 / 1 / 5 / 4;
         }
-
-        .details-input {
-            display: flex;
-            flex-direction: column;
-
-            .input,
-            .textarea {
-                height: 2.5rem;
-                padding: 5px;
-                border: 2px solid black;
-
-                &:focus {
-                    outline: none;
-                    border: 2px solid blue;
-                }
-            }
-
-            .textarea {
-                height: 100px;
-                width: 100%;
-            }
-        }
     }
 }

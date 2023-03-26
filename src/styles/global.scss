@@ -76,3 +76,24 @@ select {
         scroll-behavior: auto !important;
     }
 }
+
+.details-input {
+    display: flex;
+    flex-direction: column;
+}
+.input,
+.textarea {
+    height: 2.5rem;
+    padding: 5px;
+    border: 2px solid black;
+
+    &:focus {
+        outline: none;
+        border: 2px solid blue;
+    }
+}
+
+.textarea {
+    height: 100px;
+    width: 100%;
+}
