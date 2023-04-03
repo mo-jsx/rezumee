@@ -1,4 +1,4 @@
-# REZUME 📄
+# REZUMEE 📄
 
 > [Demo Link](https://rezumee-wine.vercel.app/)
 
