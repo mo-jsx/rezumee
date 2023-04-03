@@ -1,12 +1,12 @@
 import "./view.scss";
-import useProfileStore from "../../store/profileStore";
-import Header from "../../layouts/Display/Header";
+import { Experience, Header } from "../../layouts/Display";
 
 const View = () => {
     return (
         <div className="view">
             <div className="sheet">
                 <Header />
+                <Experience />
             </div>
         </div>
     );
