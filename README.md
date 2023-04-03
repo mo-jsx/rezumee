@@ -26,10 +26,11 @@ A react based web application enhanced with a spell-checking as you type, and a 
 -   ReactJS ⚛️: A front-end JavaScript library.
 -   Zustand 🐻 : A state-management library.
 -   Jest 🧪 : A test runner for JavaScript.
+-   E2E 🤖 : An automation and testing library.
 -   Cypress 🧪 : E2E test runner.
 -   Formik 📄 : Forms handling library.
 -   Yup ✅ : A schema builder for runtime value parsing and validation.
--   DraftJS 📄 : A rich-text WYSIWYG editor framework.
+-   React Quill 📄 : A rich-text WYSIWYG editor framework.
 -   Grammarly 📝 SDK for spell-checking, grammar-checking
 
 ---
