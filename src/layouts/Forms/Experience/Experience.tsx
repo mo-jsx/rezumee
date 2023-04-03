@@ -1,20 +1,10 @@
 import { Formik, Form, Field, FieldArray, ErrorMessage } from "formik";
-import { GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react";
 import useProfileStore from "../../../store/profileStore";
 import "./styles.scss";
 import React from "react";
+import { Editor } from "../../../components/";
 
 const Experience = () => {
-    const { jobTitle, comapny, start, end, location, jobDesc } =
-        useProfileStore(state => ({
-            jobTitle: state.jobTitle,
-            comapny: state.company,
-            start: state.start,
-            end: state.end,
-            location: state.location,
-            jobDesc: state.jobDesc,
-        }));
-
     const {
         updateJobTitle,
         updateCompany,
@@ -144,22 +134,14 @@ const Experience = () => {
                                 </div>
 
                                 <div className="details-input jobDesc">
-                                    <label htmlFor="desc">Description</label>
-                                    <GrammarlyEditorPlugin clientId="client_8uvgmmYtA3FKgst7xf8ZfF">
-                                        <Field
-                                            as="textarea"
-                                            name="desc"
-                                            id="desc"
-                                            placeholder="CEO"
-                                            className="textarea"
-                                            onChange={(
-                                                e: React.ChangeEvent<HTMLSelectElement>,
-                                            ) => {
-                                                formik.handleChange(e);
-                                                updateJobDesc(e.target.value);
-                                            }}
-                                        />
-                                    </GrammarlyEditorPlugin>
+                                    <label htmlFor="desc">
+                                        Job Description
+                                    </label>
+                                    <Editor
+                                        label={"Editor"}
+                                        name={"desc"}
+                                        updateProp={updateJobDesc}
+                                    />
                                     <ErrorMessage name="desc" />
                                 </div>
                             </div>
