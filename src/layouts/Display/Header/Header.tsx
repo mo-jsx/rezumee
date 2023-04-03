@@ -42,9 +42,11 @@ const Header = () => {
                 </h2>
                 <h4>{job ? job : "General Manager"}</h4>
                 <p>
-                    {bio
-                        ? bio
-                        : "A curios individual, who wants to master his craft."}
+                    {bio ? (
+                        <span dangerouslySetInnerHTML={{ __html: bio }} />
+                    ) : (
+                        "A curios individual, who wants to master his craft."
+                    )}
                 </p>
             </div>
 

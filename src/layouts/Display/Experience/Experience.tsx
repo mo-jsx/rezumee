@@ -51,7 +51,11 @@ const Experience = () => {
             </div>
 
             <div className="desc">
-                {jobDesc ? jobDesc : <DescPlaceholder />}
+                {jobDesc ? (
+                    <span dangerouslySetInnerHTML={{ __html: jobDesc }} />
+                ) : (
+                    <DescPlaceholder />
+                )}
             </div>
         </div>
     );
