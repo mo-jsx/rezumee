@@ -6,7 +6,7 @@ import { Details as DetailsProps } from "types/";
 import "./details.scss";
 import useProfileStore from "../../../store/profileStore";
 
-import { GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react";
+import { Editor } from "../../../components/";
 
 const validation = Yup.object({
     // firstName: Yup.string().required("Required!"),
@@ -14,28 +14,6 @@ const validation = Yup.object({
 });
 
 const Details = () => {
-    const {
-        firstName,
-        middleName,
-        lastName,
-        job,
-        email,
-        phone,
-        address,
-        bio,
-        website,
-    } = useProfileStore(state => ({
-        firstName: state.firstName,
-        middleName: state.middleName,
-        lastName: state.lastName,
-        job: state.job,
-        email: state.email,
-        phone: state.phone,
-        address: state.address,
-        bio: state.bio,
-        website: state.website,
-    }));
-
     const {
         updateFirstName,
         updateMiddleName,
@@ -59,15 +37,15 @@ const Details = () => {
     }));
 
     const initValues: DetailsProps = {
-        firstName: firstName,
-        middleName: middleName,
-        lastName: lastName,
-        job: job,
-        email: email,
-        phone: phone,
-        address: address,
-        bio: bio,
-        website: website,
+        firstName: "",
+        middleName: "",
+        lastName: "",
+        job: "",
+        email: "",
+        phone: "",
+        address: "",
+        bio: "",
+        website: "",
     };
 
     return (
@@ -207,24 +185,10 @@ const Details = () => {
 
                             <div className="details-input" id="bio">
                                 <label htmlFor="bio">Bio</label>
-                                <GrammarlyEditorPlugin clientId="client_8uvgmmYtA3FKgst7xf8ZfF">
-                                    <Field
-                                        className="textarea"
-                                        as="textarea"
-                                        name="bio"
-                                        id="bio"
-                                        placeholder="A curious human with ambitions."
-                                        onChange={e => {
-                                            formik.handleChange(e);
-                                            updateBio(e.target.value);
-                                        }}
-                                    />
-                                </GrammarlyEditorPlugin>
+                                <Editor name={"bio"} updateProp={updateBio} />
                                 <ErrorMessage name="lastName" />
                             </div>
                         </div>
-
-                        <button type="submit">Submit</button>
                     </Form>
                 );
             }}
