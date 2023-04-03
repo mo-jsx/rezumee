@@ -22,7 +22,7 @@ const Experience = () => {
     }));
 
     const initValues = {
-        job: "",
+        jobTitle: "",
         company: "",
         start: "",
         end: "",
@@ -45,10 +45,10 @@ const Experience = () => {
                             <h2>Your Experience</h2>
                             <div className="experience">
                                 <div className="details-input jobTitle">
-                                    <label htmlFor="job">Job Title</label>
+                                    <label htmlFor="jobTitle">Job Title</label>
                                     <Field
-                                        name="job"
-                                        id="job"
+                                        name="jobTitle"
+                                        id="jobTitle"
                                         placeholder="CEO"
                                         className="input"
                                         onChange={(
@@ -58,7 +58,7 @@ const Experience = () => {
                                             updateJobTitle(e.target.value);
                                         }}
                                     />
-                                    <ErrorMessage name="job" />
+                                    <ErrorMessage name="jobTitle" />
                                 </div>
 
                                 <div className="details-input company">
