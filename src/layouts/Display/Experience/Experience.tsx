@@ -6,10 +6,12 @@ import "./styles.scss";
 const DescPlaceholder = () => {
     return (
         <ul className="placeholder">
-            <li>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Libero, doloremque.
-            </li>
+            {[0, 1, 2, 3].map(li => (
+                <li>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Libero, doloremque.
+                </li>
+            ))}
         </ul>
     );
 };
@@ -41,7 +43,7 @@ const Experience = () => {
                             {company ? company : "Company Name"}
                         </span>
                     </h3>
-                    <h5 className="heading-regular no-padding-no-margin">
+                    <h5 className="dates heading-regular no-padding-no-margin">
                         {start ? (
                             moment(start).format("MMMM YYYY")
                         ) : (
@@ -57,7 +59,7 @@ const Experience = () => {
                 </div>
 
                 <div className="right">
-                    <h4 className="heading-regular">
+                    <h4 className="location heading-regular">
                         {location ? (
                             location
                         ) : (
