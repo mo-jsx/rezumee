@@ -1,10 +1,13 @@
-import { Formik, Form, Field, FieldArray, ErrorMessage } from "formik";
-import useProfileStore from "../../../store/profileStore";
-import "./styles.scss";
 import React from "react";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+
 import { Editor } from "../../../components/";
+import useProfileStore from "../../../store/profileStore";
+
+import "./styles.scss";
 
 const Experience = () => {
+    // ZUSTAND
     const {
         updateJobTitle,
         updateCompany,

@@ -1,7 +1,9 @@
 import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css";
+
 import { Field } from "formik";
 import { GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react";
+
+import "react-quill/dist/quill.snow.css";
 
 interface EditorProps {
     label?: string;

@@ -1,6 +1,7 @@
 import useProfileStore from "../../../store/profileStore";
 
 const Header = () => {
+    // ZUSTAND
     const {
         firstName,
         middleName,
@@ -36,16 +37,32 @@ const Header = () => {
             </div>
             <div className="header-name">
                 <h2>
-                    {firstName ? firstName : "Firstname"}{" "}
+                    {firstName ? (
+                        firstName
+                    ) : (
+                        <span className="placeholder">Firstname</span>
+                    )}{" "}
                     {middleName ? `${middleName.substring(0, 1)}.` : ""}{" "}
-                    {lastName ? lastName : "Lastname"}
+                    {lastName ? (
+                        lastName
+                    ) : (
+                        <span className="placeholder">Lastname</span>
+                    )}
                 </h2>
-                <h4>{job ? job : "General Manager"}</h4>
+                <h4>
+                    {job ? (
+                        job
+                    ) : (
+                        <span className="placeholder">General Manager</span>
+                    )}
+                </h4>
                 <p>
                     {bio ? (
                         <span dangerouslySetInnerHTML={{ __html: bio }} />
                     ) : (
-                        "A curios individual, who wants to master his craft."
+                        <span className="placeholder">
+                            A curios individual, who wants to master his craft.
+                        </span>
                     )}
                 </p>
             </div>
@@ -54,7 +71,13 @@ const Header = () => {
                 <ul>
                     {contact.map((field, index) => (
                         <li key={index}>
-                            {field.data ? field.data : field.placeholder}
+                            {field.data ? (
+                                field.data
+                            ) : (
+                                <span className="placeholder">
+                                    {field.placeholder}
+                                </span>
+                            )}
                         </li>
                     ))}
                 </ul>

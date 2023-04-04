@@ -1,19 +1,14 @@
-import { Formik, Form, useFormikContext, Field, ErrorMessage } from "formik";
-import * as Yup from "yup";
-
-import { Details as DetailsProps } from "types/";
-
-import "./details.scss";
-import useProfileStore from "../../../store/profileStore";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 
 import { Editor } from "../../../components/";
 
-const validation = Yup.object({
-    // firstName: Yup.string().required("Required!"),
-    // lastName: Yup.string().required("Required!"),
-});
+import { Details as DetailsProps } from "types/";
+import useProfileStore from "../../../store/profileStore";
+
+import "./details.scss";
 
 const Details = () => {
+    // ZUSTAND
     const {
         updateFirstName,
         updateMiddleName,
@@ -51,7 +46,6 @@ const Details = () => {
     return (
         <Formik
             initialValues={initValues}
-            validationSchema={validation}
             onSubmit={(values, actions) => {
                 console.log(JSON.stringify(values, null, 2));
 
@@ -79,7 +73,7 @@ const Details = () => {
                             </div>
 
                             <div className="details-input" id="middleName">
-                                <label htmlFor="firstName">Middle Name</label>
+                                <label htmlFor="middleName">Middle Name</label>
                                 <Field
                                     className="input"
                                     name="middleName"
