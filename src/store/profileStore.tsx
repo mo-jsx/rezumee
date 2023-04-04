@@ -1,8 +1,8 @@
 import { create } from "zustand";
-import { Details, Experience } from "types/";
+import { Details, Education, Experience } from "types/";
 
 // Updaters: function to update property
-interface ProfileState extends Details, Experience {
+interface ProfileState extends Details, Education, Experience {
     // Details
     updateFirstName: (by: string) => void;
     updateMiddleName: (by: string) => void;
@@ -21,6 +21,12 @@ interface ProfileState extends Details, Experience {
     updateEnd: (by: Date) => void;
     updateLocation: (by: string) => void;
     updateJobDesc: (by: string) => void;
+
+    // Education
+    updateDegree: (by: string) => void;
+    updateUniversity: (by: string) => void;
+    updateUnivStart: (by: Date) => void;
+    updateUnivEnd: (by: Date) => void;
 }
 
 const useProfileStore = create<ProfileState>()(set => ({
@@ -44,6 +50,17 @@ const useProfileStore = create<ProfileState>()(set => ({
     updateAddress: address => set({ address: address }),
     updateWebsite: website => set({ website: website }),
     updateBio: bio => set({ bio: bio }),
+
+    // Education
+    degree: "",
+    university: "",
+    univStart: new Date(),
+    univEnd: new Date(),
+
+    updateDegree: degree => set({ degree: degree }),
+    updateUniversity: university => set({ university: university }),
+    updateUnivStart: start => set({ univStart: start }),
+    updateUnivEnd: end => set({ univEnd: end }),
 
     // Experience
     jobTitle: "",
