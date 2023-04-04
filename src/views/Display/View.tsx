@@ -1,5 +1,5 @@
 import "./view.scss";
-import { Experience, Header } from "../../layouts/Display";
+import { Education, Experience, Header } from "../../layouts/Display";
 
 const View = () => {
     return (
@@ -7,6 +7,7 @@ const View = () => {
             <div className="sheet">
                 <Header />
                 <Experience />
+                <Education />
             </div>
         </div>
     );
