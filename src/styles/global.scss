@@ -89,7 +89,7 @@ select {
 
     &:focus {
         outline: none;
-        border: 2px solid blue;
+        border: 2px solid mediumaquamarine;
     }
 }
 
@@ -119,4 +119,21 @@ select {
 .break-overflow {
     word-wrap: break-word;
     overflow-wrap: break-word;
+}
+.section-title {
+    font-size: 1.1rem;
+}
+.job-title,
+.location {
+    font-size: 0.8rem;
+}
+.dates {
+    font-size: 0.6rem;
+}
+.desc {
+    font-size: 0.6rem;
+}
+.comp-name {
+    font-weight: 400;
+    font-style: italic;
 }
