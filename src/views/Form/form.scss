@@ -3,17 +3,19 @@
 
     overflow-y: scroll;
 
+    width: 100%;
+
     &::-webkit-scrollbar {
         width: 5px;
     }
 
     &::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+        -webkit-box-shadow: inset 0 0 6px #ccc;
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: darkorange;
-        outline: 1px solid darkorange;
+        background-color: rgb(102, 205, 170);
+        outline: 1px solid rgb(102, 205, 170);
         border-radius: 10px;
     }
 }
