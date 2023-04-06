@@ -1,0 +1,52 @@
+.view-header {
+    display: grid;
+    grid-template-columns: 15% 50% 35%;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+
+    max-width: 100%;
+
+    border-bottom: 1px solid gainsboro;
+
+    .header-img {
+        grid-area: 1 / 1 / 2 / 2;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    .header-name {
+        grid-area: 1 / 2 / 2 / 3;
+        margin: 0px 10px;
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        h4 {
+            font-weight: 400;
+            font-size: 0.9rem;
+        }
+
+        p {
+            padding: 5px 0px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.7rem;
+        }
+    }
+
+    .header-contact {
+        grid-area: 1 / 3 / 2 / 4;
+
+        ul {
+            margin-left: 1rem;
+            li {
+                list-style: circle;
+                font-size: 10px;
+                line-height: 1.2rem;
+            }
+        }
+    }
+}
