@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "@grammarly/editor-sdk-react": "^2.3.13",
+    "@types/jspdf": "^2.0.0",
     "formik": "^2.2.9",
+    "jspdf": "^2.5.1",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
