@@ -1,4 +1,5 @@
 import useProfileStore from "../../../store/profileStore";
+import "./styles.scss";
 
 const Header = () => {
     // ZUSTAND
@@ -35,8 +36,9 @@ const Header = () => {
             <div className="header-img">
                 <img src="https://picsum.photos/200/200" alt="Haha!" />
             </div>
+
             <div className="header-name">
-                <h2>
+                <h2 className="no-padding-no-maring break-overflow">
                     {firstName ? (
                         firstName
                     ) : (
@@ -49,14 +51,14 @@ const Header = () => {
                         <span className="placeholder">Lastname</span>
                     )}
                 </h2>
-                <h4>
+                <h4 className="break-overflow">
                     {job ? (
                         job
                     ) : (
                         <span className="placeholder">General Manager</span>
                     )}
                 </h4>
-                <p>
+                <p className="break-overflow">
                     {bio ? (
                         <span dangerouslySetInnerHTML={{ __html: bio }} />
                     ) : (
@@ -67,12 +69,14 @@ const Header = () => {
                 </p>
             </div>
 
-            <div className="header-contact">
-                <ul>
+            <div className="header-contact break-overflow">
+                <ul className="no-padding-no-margin">
                     {contact.map((field, index) => (
                         <li key={index}>
                             {field.data ? (
-                                field.data
+                                <span className="break-overflow">
+                                    {field.data}
+                                </span>
                             ) : (
                                 <span className="placeholder">
                                     {field.placeholder}
