@@ -119,7 +119,7 @@ const Experience = () => {
                                     <ErrorMessage name="end" />
                                 </div>
 
-                                <div className="details-input location">
+                                <div className="details-input locations">
                                     <label htmlFor="location">Location</label>
                                     <Field
                                         name="location"
