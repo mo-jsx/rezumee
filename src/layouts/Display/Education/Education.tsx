@@ -13,18 +13,18 @@ const Education = () => {
     );
     return (
         <div className="education">
-            <h2>Education</h2>
-            <h3 className="title">
+            <h2 className="section-title">Education</h2>
+            <h3 className="job-title">
                 {degree ? degree : <span className="placeholder">Degree</span>}
                 {university ? (
-                    university
+                    <span className="comp-name">, {university}</span>
                 ) : (
-                    <span className="placeholder university">
-                        ,University Name
+                    <span className="placeholder comp-name">
+                        , University Name
                     </span>
                 )}
             </h3>
-            <h5 className="heading-regular no-padding-no-margin">
+            <h5 className="dates heading-regular no-padding-no-margin">
                 {univStart ? (
                     moment(univStart).format("MMMM YYYY")
                 ) : (
