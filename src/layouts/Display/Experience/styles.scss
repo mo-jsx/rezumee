@@ -1,29 +1,9 @@
 .display-experience {
-    h2 {
-        margin: 1rem 0rem;
-    }
-
     .head {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
-        .left {
-            .job-title {
-                font-size: 1rem;
-            }
-            .dates {
-                font-size: 0.8rem;
-            }
-        }
-        .right {
-            .location {
-                font-size: 0.9rem;
-            }
-        }
-    }
-
-    .desc {
-        font-size: 0.8rem;
+        margin-top: 0.5rem;
     }
 }
