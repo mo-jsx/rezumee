@@ -29,7 +29,7 @@ const Experience = () => {
 
     return (
         <div className="display-experience">
-            <h2>Experience</h2>
+            <h2 className="section-title">Experience</h2>
             <div className="head">
                 <div className="left">
                     <h3 className="job-title">
@@ -38,9 +38,8 @@ const Experience = () => {
                         ) : (
                             <span className="placeholder">Job Title</span>
                         )}
-                        ,{" "}
-                        <span className="heading-regular placeholder">
-                            {company ? company : "Company Name"}
+                        <span className="heading-regular comp-name placeholder">
+                            , {company ? company : "Company Name"}
                         </span>
                     </h3>
                     <h5 className="dates heading-regular no-padding-no-margin">
