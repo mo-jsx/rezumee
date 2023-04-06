@@ -1,63 +1,15 @@
 .view {
     background-color: lightslategray;
-    padding: 1rem;
 
     .sheet {
-        margin: auto;
         background-color: white;
-        padding: 2rem;
-        width: 80%;
-        height: 100%;
-        .view-header {
-            display: flex;
-            flex-direction: row;
-            border-bottom: 1px solid gainsboro;
+        padding: 1rem;
+        width: 56%;
+        height: 80%;
 
-            .header-img {
-                flex: 2;
-
-                img {
-                    border-radius: 50%;
-                    margin: 1rem 0rem;
-                }
-            }
-
-            .header-name {
-                flex: 6;
-                padding: 1rem 1rem 1rem 2rem;
-
-                h2 {
-                    padding: 0;
-                    margin: 0;
-                }
-
-                h4 {
-                    font-weight: 400;
-                }
-
-                p {
-                    padding: 10px 0px;
-                    width: 80%;
-                    text-align: center;
-                    font-size: 11px;
-                }
-            }
-
-            .header-contact {
-                flex: 2;
-
-                ul {
-                    margin: 1rem 0rem;
-                    padding: 0rem 0rem 0rem 1rem;
-
-                    li {
-                        list-style: circle;
-                        font-size: 12px;
-                        line-height: 1.4rem;
-                        white-space: nowrap;
-                    }
-                }
-            }
-        }
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(45%, 15%);
     }
 }
