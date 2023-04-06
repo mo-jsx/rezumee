@@ -12,4 +12,23 @@
         left: 0;
         transform: translate(45%, 15%);
     }
+
+    .print-button {
+        position: relative;
+        z-index: 9;
+        top: 15%;
+        left: 50%;
+
+        border: 2px solid black;
+        background: white;
+        // font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            border-color: mediumaquamarine;
+            background: mediumaquamarine;
+            color: white;
+            transition: 0.2s all ease-in-out;
+        }
+    }
 }
