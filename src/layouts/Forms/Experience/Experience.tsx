@@ -69,7 +69,7 @@ const Experience = () => {
                                     <Field
                                         name="company"
                                         id="company"
-                                        placeholder="CEO"
+                                        placeholder="Uber"
                                         className="input"
                                         onChange={(
                                             e: React.ChangeEvent<HTMLSelectElement>,
@@ -87,7 +87,7 @@ const Experience = () => {
                                         type="date"
                                         name="start"
                                         id="start"
-                                        placeholder="CEO"
+                                        placeholder="Start Date"
                                         className="input"
                                         onChange={(
                                             e: React.ChangeEvent<HTMLSelectElement>,
@@ -107,7 +107,7 @@ const Experience = () => {
                                         type="date"
                                         name="end"
                                         id="end"
-                                        placeholder="CEO"
+                                        placeholder="End Date"
                                         className="input"
                                         onChange={(
                                             e: React.ChangeEvent<HTMLSelectElement>,
@@ -124,7 +124,7 @@ const Experience = () => {
                                     <Field
                                         name="location"
                                         id="location"
-                                        placeholder="CEO"
+                                        placeholder="Newark, New Jersey"
                                         className="input"
                                         onChange={(
                                             e: React.ChangeEvent<HTMLSelectElement>,
