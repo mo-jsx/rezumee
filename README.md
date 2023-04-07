@@ -23,15 +23,15 @@ A react based web application enhanced with a spell-checking as you type, and a 
 
 ## Tools
 
--   ReactJS ⚛️: A front-end JavaScript library.
--   Zustand 🐻 : A state-management library.
--   Jest 🧪 : A test runner for JavaScript.
--   E2E 🤖 : An automation and testing library.
--   Cypress 🧪 : E2E test runner.
+-   Cypress 🤖 : An automation and testing library.
 -   Formik 📄 : Forms handling library.
--   Yup ✅ : A schema builder for runtime value parsing and validation.
--   React Quill 📄 : A rich-text WYSIWYG editor framework.
 -   Grammarly 📝 SDK for spell-checking, grammar-checking
+-   Jest 🧪 : A test runner for JavaScript.
+-   jsPDF 🖨️: Convert React components to PDF files.
+-   ReactJS ⚛️: A front-end JavaScript library.
+-   React Quill 📄 : A rich-text WYSIWYG editor framework.
+-   Yup ✅ : A schema builder for runtime value parsing and validation.
+-   Zustand 🐻 : A state-management library.
 
 ---
 
