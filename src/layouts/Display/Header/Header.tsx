@@ -31,11 +31,21 @@ const Header = () => {
         { data: address, placeholder: "Newark, New Jersey" },
         { data: website, placeholder: "www.tony-soprano.com" },
     ];
+
+    const profileImage = localStorage.getItem("profileImage");
+
     return (
         <header className="view-header">
-            <div className="header-img">
-                <img src="https://picsum.photos/200/200" alt="Haha!" />
-            </div>
+            {profileImage ? (
+                <div className="header-img">
+                    <img
+                        src={profileImage}
+                        alt={`${firstName}'s Profile Image`}
+                    />
+                </div>
+            ) : (
+                ""
+            )}
 
             <div className="header-name">
                 <h2 className="no-padding-no-maring break-overflow">
@@ -79,7 +89,7 @@ const Header = () => {
                                 </span>
                             ) : (
                                 <span className="placeholder">
-                                    {field.placeholder}
+                                    {field.placeholder}/{" "}
                                 </span>
                             )}
                         </li>
