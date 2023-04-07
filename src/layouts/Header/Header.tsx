@@ -1,3 +1,4 @@
+import { ImgUpload } from "../../components/";
 import useProfileStore from "../../store/profileStore";
 
 import "./header.css";
@@ -10,10 +11,7 @@ const Header = () => {
 
     return (
         <header className="header">
-            <img
-                src={"https://picsum.photos/200/200"}
-                alt={`${firstName} picture`}
-            />
+            <ImgUpload />
             {firstName ? (
                 <h1>{firstName.toUpperCase()}'s resume</h1>
             ) : (
