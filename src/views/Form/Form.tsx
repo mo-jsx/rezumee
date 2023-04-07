@@ -1,4 +1,4 @@
-import { Details, Experience, Header } from "../../layouts";
+import { Details, Education, Experience, Header } from "../../layouts";
 
 import "./form.scss";
 
@@ -8,6 +8,7 @@ const Form = () => {
             <Header />
             <Details />
             <Experience />
+            <Education />
         </div>
     );
 };
