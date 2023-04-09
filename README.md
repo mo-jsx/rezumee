@@ -4,7 +4,7 @@
 
 Version: 1.0.0
 
-⚠️ UNDER CONSTRUCTION ⚠️
+⚠️ PROJECT UNDER CONSTRUCTION ⚠️
 
 A react based web application enhanced with a spell-checking as you type, and a Rich-Text field for text formatting.
 
@@ -20,6 +20,7 @@ A react based web application enhanced with a spell-checking as you type, and a 
 
 -   Export file as : DOC, ODF, TEX.
 -   Multi-pages resumes.
+-   Internationalization.
 
 ## Tools
 
